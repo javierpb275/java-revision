@@ -15,14 +15,15 @@ public class Types {
 	int minInt = -2147483648;
 	int maxInt = 2147483647;
 	
-	long minLong = -999999999;
-	long maxLong = 999999999;
+	long minLong = -9223372036854775808L;
+	long maxLong = 9223372036854775807L;
 	
 	//decimal numbers:
-	float minFloat;
+	float minFloat = -3.402823e38F;
+	float maxFloat = 3.402823e38F;
 	
-	double minDouble = -1.79769313486232308;
-	double maxDouble = 1.79769313486232308;
+	double minDouble = -1.79769313486232308D;
+	double maxDouble = 1.79769313486232308D;
 	
 	//boolean:
 	boolean theTruth = true;
