@@ -37,4 +37,15 @@ public class Conditionals {
 
 	}
 
+	void ternaryOperator() {
+		boolean pass;
+		int grade = 7;
+		pass = grade >= 5 ? true : false;
+
+		int roundedGrade;
+		int grade2 = 6;
+
+		roundedGrade = grade2 >= 5 ? 10 : 5;
+	}
+
 }
