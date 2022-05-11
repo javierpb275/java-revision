@@ -1,21 +1,23 @@
 package com.javi.revision;
 
-import com.javi.revision.oop.Boat;
+import com.javi.revision.oop.GuitarPlayer;
+import com.javi.revision.oop.Musician;
 
 public class App {
 
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
 
-		Boat defaultBoat = new Boat();
-		Boat defaultBoat2 = new Boat();
-		Boat newBoat = new Boat("ABCDEF", "Sarah");
-
-		System.out.println(defaultBoat.toString());
-		System.out.println(newBoat.toString());
+		GuitarPlayer guitarPlayer1 = new GuitarPlayer();
+		guitarPlayer1.name = "pepe";
+		guitarPlayer1.surname = "perez";
 		
-		System.out.println(defaultBoat.equals(defaultBoat2));
-		System.out.println(defaultBoat.equals(newBoat));
+		Musician musician1 = new Musician();
+		musician1.name = "paco";
+		musician1.surname = "rodriguez";
+		
+		System.out.println(guitarPlayer1.getNameSurname());
+		System.out.println(musician1.getNameSurname());
 	}
 
 }
