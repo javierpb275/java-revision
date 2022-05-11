@@ -1,16 +1,19 @@
 package com.javi.revision;
 
-import com.javi.revision.oop.Person;
+import com.javi.revision.oop.Pattern;
 
 public class App {
 
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
 
-		Person.info = "";
-		Person.sayHello();
-
-		Person p1 = new Person();
+		Pattern p1 = Pattern.getPattern();
+		Pattern p2 = Pattern.getPattern();
+		Pattern p3 = Pattern.getPattern();
+		
+		System.out.println(p1);
+		System.out.println(p2);
+		System.out.println(p3);
 	}
 
 }
