@@ -1,57 +1,39 @@
 package com.javi.revision;
 
-import java.util.Scanner;
-
-import com.javi.revision.exceptions.AgeException;
-import com.javi.revision.exceptions.Person;
+import com.javi.revision.enums.DayOfWeek;
 
 public class App {
 
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
 
-		Scanner sc = new Scanner(System.in);
+		DayOfWeek day;
+		day = DayOfWeek.SUNDAY;
 
-		Person people[] = new Person[10];
+		switch(day) {
+			case SUNDAY:
+			System.out.println("It's SUNDAY.");
+			break;
+			case MONDAY:
+			System.out.println("It's MONDAY.");
+			break;
+			case TUESDAY:
+			System.out.println("It's TUESDAY.");
+			break;
+			case WEDNESDAY:
+			System.out.println("It's WEDNESDAY.");
+			break;
+			case THURSDAY:
+			System.out.println("It's THURSDAY.");
+			break;
+			case FRIDAY:
+			System.out.println("It's FRIDAY.");
+			break;
+			case SATURDAY:
+			System.out.println("It's SATURDAY.");
+			break;
+		}
 
-		int i = 0;
-
-		String name;
-		int age;
-		boolean error;
-
-		do {
-
-			try {
-
-				error = false;
-				// people[i] = new Person();
-				System.out.println("Tell me your name:");
-				name = sc.nextLine();
-				System.out.println("How old are you ?");
-				age = sc.nextInt();
-
-				sc.nextLine();
-
-				// people[i].setName(name);
-
-				// people[i].setAge(age);
-
-				people[i] = new Person(name, age);
-
-			} catch (AgeException e) {
-				error = true;
-				System.out.println(e);
-			} finally {
-
-			}
-
-			if (!error) {
-				i++;
-				System.out.println("Person added");
-			}
-
-		} while (i < 10);
 	}
 
 }
